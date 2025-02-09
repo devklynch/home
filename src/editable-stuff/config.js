@@ -55,14 +55,21 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "devklynch", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  projects: [
+    {
+      title: "Smart Gardening",
+      description: "Project text",
+      img: require("../editable-stuff/smgar.png"),
+      backendrepo: "https://github.com/sethverrill/smart-gardening-be",
+      frontendrepo: "https://github.com/wally-yawn/smart_gardening_fe)",
+      deployedsite: "https://smart-gardening-fe.vercel.app/",
+    },
+  ],
 };
 
 // Leadership SECTION
 const leadership = {
-  show: true,
+  show: false,
   heading: "Recent Projects",
 
   message:

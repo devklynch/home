@@ -44,12 +44,7 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {experiences.show && <Experience experiences={experiences} />}
       {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
-        />
+        <Project heading={repos.heading} projects={repos.projects} />
       )}
       {leadership.show && (
         <Leadership
