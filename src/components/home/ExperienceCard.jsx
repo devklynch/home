@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import {
-  Col,
-} from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const ExperienceCard = ({ data }) => {
   return (
@@ -14,10 +12,16 @@ const ExperienceCard = ({ data }) => {
           <br />
           {data.date}
         </p>
-
+        {data.info && data.info.length > 0 && (
+          <ul className="text-left list-unstyled">
+            {data.info.map((item, index) => (
+              <li key={index}>• {item}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </Col>
   );
-}
+};
 
 export default ExperienceCard;

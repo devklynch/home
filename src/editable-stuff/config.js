@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Devlin",
   middleName: "",
   lastName: "Lynch",
-  message: " Passionate about changing the world with technology. ",
+  message: "Solving problems and creating impact through technology",
   icons: [
     {
       image: "fa-github",
@@ -58,11 +58,20 @@ const repos = {
   projects: [
     {
       title: "Smart Gardening",
-      description: "Project text",
+      description:
+        "React-based app that provides personal plant recommendations using OpenAI and Google Cloud APIs, allowing users to save and manage plants based on their garden condtions. I worked on developing the My Garden functionality to save, delete, and display plants on both the React frontend and Rails backend. I also learned about and then implemented testing with Cypress to ensure a working and accessible front-end.",
       img: require("../editable-stuff/smart_gardening.gif"),
       backendrepo: "https://github.com/sethverrill/smart-gardening-be",
       frontendrepo: "https://github.com/wally-yawn/smart_gardening_fe",
       deployedsite: "https://smart-gardening-fe.vercel.app/",
+    },
+    {
+      title: "Music Festival",
+      description:
+        "This project focused on a full stack app for a music festival organization service with a Rails API and React front-end. This would be for an admin user to have the ability to view user's schedules and details as well as have the ability to remove a show from a specific schedule. This was completed in 16 hours over 3 days. The app demonstrates by ability to build a well-structured full-stack app, balancing back-end functionality with a user-friendly interface.",
+      img: require("../editable-stuff/MusicFE.gif"),
+      backendrepo: "https://github.com/devklynch/music_festival_be",
+      frontendrepo: "https://github.com/devklynch/music_festival_fe",
     },
   ],
 };
@@ -155,14 +164,22 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: "Software Engineer", // Here Add Company Name
-      companylogo: require("../assets/img/dell.png"),
-      date: "June 2018 – Present",
+      role: "Senior Project Manager, Paytronix Systems", // Here Add Company Name
+      info: [
+        "Managed large complex projects working with 3rd parties, product teams, and stakeholders",
+        "Mainted project timelines and worked closely with clients ranging from IT, marketing, and C-suite executives",
+        "Developed internal processes and documentation for Project Manangement Office",
+      ],
+      date: "Mar. 2020 – Aug. 2024",
     },
     {
-      role: "Front-End Developer",
-      companylogo: require("../assets/img/boeing.png"),
-      date: "May 2017 – May 2018",
+      role: "Implementations Consultant, Paytronix Systems",
+      info: [
+        "Oversaw multiple implementations projects that involved requirements gathering, software configuration, and training clients",
+        "Worked with 3rd parties to troubleshoot integrations and software",
+        "Configured software for clients based on desired program and design",
+      ],
+      date: "Feb. 2018 – Mar. 2020",
     },
   ],
 };
