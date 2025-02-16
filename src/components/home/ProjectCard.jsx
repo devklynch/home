@@ -185,13 +185,13 @@ const ProjectCard = ({
 
 const CardButtons = ({ backendrepo, frontendrepo, deployedsite }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
+    <div className="d-grid gap-2 d-md-block text-center">
       {deployedsite && (
         <Button
-          variant="primary"
+          variant="secondary"
           href={deployedsite}
           target="_blank"
-          className="mb-2"
+          className="mb-2 me-2"
         >
           Live Site
         </Button>
@@ -201,13 +201,18 @@ const CardButtons = ({ backendrepo, frontendrepo, deployedsite }) => {
           variant="secondary"
           href={frontendrepo}
           target="_blank"
-          className="mb-2"
+          className="mb-2 me-2"
         >
           Frontend Repo
         </Button>
       )}
       {backendrepo && (
-        <Button variant="secondary" href={backendrepo} target="_blank">
+        <Button
+          variant="secondary"
+          href={backendrepo}
+          target="_blank"
+          className="mb-2 me-2"
+        >
           Backend Repo
         </Button>
       )}

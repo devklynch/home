@@ -59,55 +59,44 @@ const repos = {
     {
       title: "Smart Gardening",
       description: "Project text",
-      img: require("../editable-stuff/smgar.png"),
+      img: require("../editable-stuff/smart_gardening.gif"),
       backendrepo: "https://github.com/sethverrill/smart-gardening-be",
-      frontendrepo: "https://github.com/wally-yawn/smart_gardening_fe)",
+      frontendrepo: "https://github.com/wally-yawn/smart_gardening_fe",
       deployedsite: "https://smart-gardening-fe.vercel.app/",
     },
   ],
 };
 
-// Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Recent Projects",
-
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
+// Education SECTION
+const education = {
+  show: true,
+  heading: "Education",
+  listings: [
     {
-      img: require("../editable-stuff/hashirshoaeb.png"),
-      label: "First slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      school: "Turing School of Software and Design",
+      description: [
+        "1,500 hour, 7-month intensive ACCET-accredited software development program",
+        "Member of the Student Leadership Committee",
+      ],
+      dates: "Aug. 2024 - Mar. 2025",
+      img: require("../editable-stuff/turing_logo.png"),
     },
     {
-      img: require("../editable-stuff/hashirshoaeb.png"),
-      label: "Second slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-  ],
-  imageSize: {
-    width: "615",
-    height: "450",
-  },
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
-    {
-      img: require("../editable-stuff/hashirshoaeb.png"),
-      label: "First slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      school: "University of Colorado Denver, MBA",
+      description: ["Specialization in Business Analytics"],
+      dates: "Dec. 2020",
+      img: require("../editable-stuff/cu_denver_logo.png"),
     },
     {
-      img: require("../editable-stuff/hashirshoaeb.png"),
-      label: "Second slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      school:
+        "University of Notre Dame, Bachelor of Business Administration, IT Management",
+      description: [
+        "Activities and societies- Notre Dame Ultimate Frisbee Club, Notre Dame Information Technology Club, Student International Business Council Member, Dorm Vice President and Dorm Council",
+      ],
+      dates: "Aug. 2009 - May 2013",
+      img: require("../editable-stuff/nd_logo.jpg"),
     },
   ],
-  imageSize: {
-    width: "615",
-    height: "450",
-  },
 };
 
 // SKILLS SECTION
@@ -157,12 +146,12 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for full-time Software Engineering. If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "devklynch@gmail.com",
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
@@ -189,7 +178,7 @@ export {
   about,
   repos,
   skills,
-  leadership,
+  education,
   getInTouch,
   experiences,
 };
