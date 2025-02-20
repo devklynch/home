@@ -114,6 +114,11 @@ const skills = {
   heading: "Skills",
   programmingLanguages: [
     {
+      name: "React",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    },
+
+    {
       name: "Javascript",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
@@ -129,16 +134,12 @@ const skills = {
       name: "Ruby",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
     },
-  ],
-  frameworks: [
-    {
-      name: "React",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    },
     {
       name: "Rails",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain.svg",
     },
+  ],
+  testing: [
     {
       name: "Cypress",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg",
@@ -146,6 +147,27 @@ const skills = {
     {
       name: "RSpec",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rspec/rspec-original.svg",
+    },
+    {
+      name: "SimpleCov, Webmock, VCR",
+    },
+  ],
+  tools: [
+    {
+      name: "Github Projects",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    },
+    {
+      name: "PostgreSQL",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    },
+    {
+      name: "Postman",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    },
+    {
+      name: "Jira",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg",
     },
   ],
 };

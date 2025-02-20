@@ -4,56 +4,48 @@ import Tabs from "react-bootstrap/Tabs";
 import SkillsTab from "./SkillsTab";
 import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
-import { Container } from "react-bootstrap";
+import { Container, Col, Image } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 const Skills = React.forwardRef(
-  ({ heading, programmingLanguages, frameworks }, ref) => {
-    const skillsTabRef = React.useRef(null);
-    const [isScrolled, setIsScrolled] = React.useState(false);
-    //const navbarDimensions = useResizeObserver(navbarMenuRef);
+  ({ heading, programmingLanguages, testing, tools }, ref) => {
+    const skillCategories = [
+      { title: "Languages and Frameworks", skills: programmingLanguages },
+      { title: "Testing", skills: testing },
+      { title: "Tools and Workflow", skills: tools },
+    ];
 
-    useScrollPosition(
-      ({ prevPos, currPos }) => {
-        if (!isScrolled && currPos.y - 400 < 0) setIsScrolled(true);
-      },
-      [],
-      skillsTabRef
-    );
     return (
-      <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
-        <Container className="p-5 ">
-          <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
-            {heading}
-          </h2>
-          <Tabs
-            className="skills-tabs"
-            defaultActiveKey="hard-skills"
-            id="skills-tabs"
-            fill
-          >
-            <Tab
-              tabClassName="skills-tab lead"
-              eventKey="hard-skills"
-              title="Programming Languages"
-            >
-              <Row className="pt-3 px-1">
-                <SkillsTab
-                  skills={programmingLanguages}
-                  isScrolled={isScrolled}
-                />
+      <Jumbotron fluid className="bg-white m-0" id="skills">
+        <Container className="p-5">
+          <h2 className="display-4 pb-5 text-center">{heading}</h2>
+          {skillCategories.map(({ title, skills }) => (
+            <div key={title} className="mb-4">
+              <h3 className="lead text-center">{title}</h3>
+              <Row className="pt-2 px-1 justify-content-center">
+                {skills.map((skill, index) => (
+                  <Col
+                    key={index}
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center py-3"
+                  >
+                    {skill.img && (
+                      <Image
+                        src={skill.img}
+                        alt={skill.name}
+                        width={50}
+                        height={50}
+                        className="mb-2"
+                      />
+                    )}
+                    <div>{skill.name}</div>
+                  </Col>
+                ))}
               </Row>
-            </Tab>
-            <Tab
-              tabClassName="skills-tab lead"
-              eventKey="soft-skills"
-              title="Frameworks"
-            >
-              <Row className="pt-3 px-1">
-                <SkillsTab skills={frameworks} isScrolled={isScrolled} />
-              </Row>
-            </Tab>
-          </Tabs>
+            </div>
+          ))}
         </Container>
       </Jumbotron>
     );

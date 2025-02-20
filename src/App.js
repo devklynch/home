@@ -59,7 +59,8 @@ const Home = React.forwardRef((props, ref) => {
         <Skills
           heading={skills.heading}
           programmingLanguages={skills.programmingLanguages}
-          frameworks={skills.frameworks}
+          testing={skills.testing}
+          tools={skills.tools}
         />
       )}
     </>
