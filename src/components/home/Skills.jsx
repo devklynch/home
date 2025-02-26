@@ -16,20 +16,20 @@ const Skills = React.forwardRef(
     ];
 
     return (
-      <Jumbotron fluid className="bg-white m-0" id="skills">
+      <Jumbotron fluid className="bg-light m-0" id="skills">
         <Container className="p-5">
           <h2 className="display-4 pb-5 text-center">{heading}</h2>
           {skillCategories.map(({ title, skills }) => (
             <div key={title} className="mb-4">
-              <h3 className="lead text-center">{title}</h3>
+              <h3 className="lead text-center fw-bold">{title}</h3>
               <Row className="pt-2 px-1 justify-content-center">
                 {skills.map((skill, index) => (
                   <Col
                     key={index}
                     xs={6}
                     md={4}
-                    lg={3}
-                    className="text-center py-3"
+                    lg={2}
+                    className="text-center py-2"
                   >
                     {skill.img && (
                       <Image

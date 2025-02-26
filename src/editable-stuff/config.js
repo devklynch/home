@@ -22,20 +22,6 @@ const mainBody = {
   ],
 };
 
-// ABOUT SECTION
-// If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
-//a) your Instagram username
-//      i.e:profilePictureLink:"johnDoe123",
-//b) a link to an hosted image
-//      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
-//c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/hashirshoaeb.png"),
-//d) If you do not want any picture to be displayed, just leave it empty :)
-//      i.e: profilePictureLink: "",
-// For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-
 const about = {
   show: true,
   heading: "About Me",
@@ -44,14 +30,10 @@ const about = {
   message:
     "I'm a project manager turned software engineer who loves bringing ideas to life, making things easier for people, and getting creative with problem-solving. In my time as a project manager, I worked closely with developers to define requirements, compile use cases, and manage feature development. I also collaborated with third parties on integrations, which sparked my interest in software development and inspired me to create the solutions I once managed. Now, I combine my ability to understand projects at both a high level and in detail with my engineering skills and strong documentation practices to build thoughtful, effective solutions.",
   resume:
-    "https://docs.google.com/document/d/1mNYk5VZL8Y_2E4Px-AwA_FKBYLqJGzhj8BF7lNTIC6Y/edit?usp=sharing",
+    "https://docs.google.com/document/d/1wNXUJfcxN-QXpSMIt-QSGXo4GbYmPCMp8oHA2sVUDGY/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
-//      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
-//      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
   heading: "Recent Projects",
@@ -68,10 +50,19 @@ const repos = {
     {
       title: "Music Festival",
       description:
-        "This project focused on a full stack app for a music festival organization service with a Rails API and React front-end. This would be for an admin user to have the ability to view user's schedules and details as well as have the ability to remove a show from a specific schedule. This was completed in 16 hours over 3 days. The app demonstrates by ability to build a well-structured full-stack app, balancing back-end functionality with a user-friendly interface.",
+        "This project focused on a full stack app for a music festival organization service. This project features a Ruby on Rails REST API backend adhering to object-oriented programming principles, with robust data relationships between users, shows, and personalized schedules. The responsive React frontend delivers an intuitive user experience, allowing festival administrators to view, manage, and modify user schedules with ease. Implemented advanced features including schedule filtering, show removal functionality, and comprehensive schedule details display. This was completed in 16 hours over 3 days. The app demonstrates my ability to build a well-structured full-stack app, balancing back-end functionality with a user-friendly interface.",
       img: require("../editable-stuff/MusicFE.gif"),
       backendrepo: "https://github.com/devklynch/music_festival_be",
       frontendrepo: "https://github.com/devklynch/music_festival_fe",
+    },
+    {
+      title: "Rancid Tomatillos",
+      description:
+        "This project focused on creating a dynamic moving voting app where a user can vote on movies as well as view details about the movie like genre and summary. For this project I focused on ingesting movie data from an API and working on the React components to display movie details and implement React Router to navigate different movie pages. I also worked on end to end testing with cypress.",
+      img: require("../editable-stuff/rancid_tomatillos.gif"),
+      frontendrepo: "https://github.com/TDManning/rancid-tomatillos",
+      deployedsite:
+        "https://rancid-tomatillos-a8epnhzkd-tdmannings-projects.vercel.app/",
     },
   ],
 };
@@ -121,6 +112,10 @@ const skills = {
     {
       name: "Javascript",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "Typescript",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     },
     {
       name: "HTML",
@@ -177,7 +172,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering. If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "I'm currently looking for full-time Software Engineering role. If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "devklynch@gmail.com",
 };
 
@@ -186,7 +181,7 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: "Senior Project Manager, Paytronix Systems", // Here Add Company Name
+      role: "Senior Project Manager, Paytronix Systems",
       info: [
         "Managed large complex projects working with 3rd parties, product teams, and stakeholders",
         "Mainted project timelines and worked closely with clients ranging from IT, marketing, and C-suite executives",
@@ -201,15 +196,19 @@ const experiences = {
         "Worked with 3rd parties to troubleshoot integrations and software",
         "Configured software for clients based on desired program and design",
       ],
-      date: "Feb. 2018 – Mar. 2020",
+      date: "Aug. 2016 – Mar. 2020",
+    },
+    {
+      role: "Business Operations Analyst II, Dish Network",
+      info: [
+        "Member of the Routing Team in the In-Home Services Command Center, worked to increase routing efficiency through strategic trials, system design, and communication to reduce costs and effectively serve internal and external partners",
+        "Developed reporting for multiple research projects on job durations, which had a direct impact on third party pay rates and internal cost per point metrics",
+        "Project lead for a new testing environment, which involved creating a Business Value Statement, user acceptance testing, and follow up development",
+      ],
+      date: "Aug. 2013 – Aug. 2016",
     },
   ],
 };
-
-// Blog SECTION
-// const blog = {
-//   show: false,
-// };
 
 export {
   navBar,
