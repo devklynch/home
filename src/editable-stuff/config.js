@@ -29,8 +29,7 @@ const about = {
   imageSize: 375,
   message:
     "I'm a project manager turned software engineer who loves bringing ideas to life, making things easier for people, and getting creative with problem-solving. In my time as a project manager, I worked closely with developers to define requirements, compile use cases, and manage feature development. I also collaborated with third parties on integrations, which sparked my interest in software development and inspired me to create the solutions I once managed. Now, I combine my ability to understand projects at both a high level and in detail with my engineering skills and strong documentation practices to build thoughtful, effective solutions.",
-  resume:
-    "https://docs.google.com/document/d/1wNXUJfcxN-QXpSMIt-QSGXo4GbYmPCMp8oHA2sVUDGY/edit?usp=sharing",
+  resume: require("../editable-stuff/Resume_Portfolio.pdf"),
 };
 
 // PROJECTS SECTION
